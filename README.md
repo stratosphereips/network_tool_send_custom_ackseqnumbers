@@ -70,3 +70,6 @@ Read the JSON logs with jq:
   "resp_ip_bytes": 0
 }
 ```
+
+# About
+This repository was created in 2024 at the Stratosphere Laboratory, AI Center, FEE, Czech Technical University in Prague.
