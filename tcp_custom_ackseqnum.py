@@ -8,7 +8,7 @@ def send_tcp_ack_packets(source_ip, destination_ip, sport, dport, seq_increment,
     ip = IP(src=source_ip, dst=destination_ip)
 
     # List to store sequence and acknowledgment numbers
-    seq_nums = [i * seq_increment for i in range(3)]
+    seq_nums = [initial_seq + i * seq_increment for i in range(3)]
     ack_nums = [initial_ack + i * ack_increment for i in range(3)]
 
     # Send three TCP ACK packets with specified sequence and acknowledgment numbers
